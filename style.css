@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%); 
+}
+/* ---principal del body--- */
+body,html{
+    height: 100%;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: var(--LightGray);
+    padding: 70px;
+}
+main{
+    height: 722px;
+    width: 310px;
+    margin: auto;
+    
+}
+/* ---primera parte--- */
+.seccion1{
+    height: 266px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 24px;
+    border-radius: 5px 5px 0 0 ;
+}
+.container_1-1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.primer_titulo{
+    color: var(--Cyan);
+    font-size: 1.3em;
+    padding-bottom: 32px;
+}
+.primer_p{
+    color: var(--BrightYellow);
+    font-size: 1.0em;
+    font-weight: 700;
+    padding-bottom: 27px;
+}
+.segundo_p{
+    color: var(--GrayishBlue);
+    font-size: 0.8rem;
+}
+/* ---segunda parte--- */
+.seccion2{
+    height: 228px;
+    width: 100%;
+    background-color: var(--Cyan);
+    display: flex;
+    padding: 27px 24px;
+}
+.container_2-1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.segundo_titulo{
+    color: white;
+    font-weight: 700;
+    font-size: 1.0em;
+    
+}
+.tercer_p{
+    color: var(--LightGray);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.costo{
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+}
+.cuarto_p{
+    color: white;
+    margin-bottom: 13px;
+}
+button{
+    height: 48px;
+    width: 263px;
+    font-weight: 700;
+    background-color: var(--BrightYellow);
+    border:none;
+    border-radius: 5px;
+    color: var(--LightGray);
+}
+/* ---tercera parte--- */
+.seccion3{
+    height: 227px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    background-color: hsl(179, 61%, 47%);
+}
+.container_3-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 24px;
+    flex-direction: column;
+}
+.tercer_titulo{
+    color: white;
+    font-size: 1.2em;
+    padding-bottom: 13px;
+}
+.quinto_p{
+    color: var(--LightGray);
+    font-weight: 400;
+    font-size: 15px;
+    width: 195px;
+   
+
+}
+/* ---footer--- */
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+/* ---media queris--- */
+@media screen and (min-width:1200px){
+    main{
+        height: 474px;
+        width: 635px;
+    }
+    .max_width{
+        display: flex;
+    }
+    .seccion1{
+        height: 40%;
+    }
+    .primer_titulo{
+        color: var(--Cyan);
+        font-size: 1.5em;
+        padding: 0;
+    }
+    .primer_p{
+        color: var(--BrightYellow);
+        font-size: 1.1em;
+        font-weight: 700;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+    .segundo_p{
+        width: 538px;
+        font-size: 1.01em;
+    }
+    .seccion2{
+        height: 228px;
+        width: 50%;
+        background-color: var(--Cyan);
+        display: flex;
+        padding: 42px 43px;
+        border-radius: 0 0 0 5px;
+    }
+    .segundo_titulo{
+        color: white;
+        font-weight: 700;
+        font-size: 0.9em;
+        padding-bottom: 10px;
+        
+    }
+    .cuarto_p{
+        color: white;
+        font-size: 0.8em;
+    }
+    button{
+        height: 48px;
+        width: 236px;
+        font-weight: 700;
+        background-color: var(--BrightYellow);
+        border:none;
+        border-radius: 5px;
+        color: var(--LightGray);
+    }
+    .seccion3{
+        height: 227px;
+        width: 50%;
+        border-radius: 0 0 5px 0;
+        background-color: hsl(179, 61%, 47%);
+    }
+    .quinto_p{
+        font-size: 16px;
+        width: 210px;
+    
+    }
+}
